@@ -1,0 +1,28 @@
+{% extends 'nav.html' %}
+
+{% block content %}
+
+<h1 class="text-center">Home</h1>
+
+{% if error %} 
+
+        <div class="container shadow p-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>The URL Does Not Exists</p>
+                    <a href="/dashboard" class="btn btn-primary">Shorten A URL</a>
+                </div>
+            </div>
+        </div>
+
+    
+{% endif %}
+
+
+
+
+</body>
+ 
+</html>
+
+{% endblock %}
